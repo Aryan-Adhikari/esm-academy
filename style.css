@@ -139,7 +139,7 @@ section h2 {
 }
 
 .contact-link:hover {
-  color: #005f73;
+  color: black;
   transform: scale(1.05);
   text-decoration: underline;
 }
@@ -205,4 +205,5 @@ footer {
   }
 
 }
+
 
