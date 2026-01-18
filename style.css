@@ -214,7 +214,7 @@ footer {
 
 .social-section p {
   font-weight: 600;
-  color: white;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -238,6 +238,7 @@ footer {
   transform: scale(1.15);
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
+
 
 
 
