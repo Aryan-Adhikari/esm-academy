@@ -125,6 +125,25 @@ section h2 {
   color: #0f3d3e;
   margin-bottom: 10px;
 }
+.contact {
+  text-align: center;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 8px 0 20px;
+  color: #0a9396;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.contact-link:hover {
+  color: #005f73;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
 
 /* ===== FOOTER ===== */
 footer {
@@ -186,3 +205,4 @@ footer {
   }
 
 }
+
