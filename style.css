@@ -144,6 +144,19 @@ section h2 {
   transform: scale(1.05);
   text-decoration: underline;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
 
 
 /* ===== FOOTER ===== */
@@ -206,6 +219,7 @@ footer {
   }
 
 }
+
 
 
 
