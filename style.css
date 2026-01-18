@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+/* ===== BODY BACKGROUND ===== */
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   color: #fff;
 
   background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("images/background.jpg");
 
   background-size: cover;
@@ -27,6 +24,18 @@ body {
 
 /* ===== HEADER ===== */
 header {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+header p {
+  opacity: 0.9;
+}
+.main-header {
   padding: 25px 15px;
 }
 
@@ -37,21 +46,19 @@ header {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  text-align: center;
 }
 
 /* LOGO */
 .logo {
   width: 80px;
   height: 80px;
+  object-fit: contain;
   border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid black;
 }
 
-/* HEADER TEXT */
+/* TEXT */
 .header-content h1 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
 }
 
 .header-content p {
@@ -64,25 +71,24 @@ nav {
   text-align: center;
   padding: 14px;
 }
+nav a.active {
+  color: #f4d03f;
+  text-shadow: 0 0 8px rgba(244,208,63,0.8);
+}
+
 
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 18px;
   font-weight: 600;
-  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #f4d03f;
 }
 
-nav a.active {
-  color: #f4d03f;
-  text-shadow: 0 0 8px rgba(244,208,63,0.9);
-}
-
-/* ===== JOIN / TYPING SECTION ===== */
+/* ===== JOIN SECTION ===== */
 .join-section {
   text-align: center;
   padding: 60px 20px;
@@ -105,41 +111,27 @@ nav a.active {
   25%, 75% { border-color: red; }
 }
 
-/* ===== MAIN SECTION ===== */
+/* ===== CONTENT SECTION ===== */
 section {
   max-width: 1000px;
   margin: 25px auto;
   padding: 25px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.92);
   color: #333;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  flex: 1;
+  border-radius: 10px;
 }
 
 section h2 {
   color: #0f3d3e;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-/* ===== CONTACT PAGE ===== */
-.contact {
+/* ===== FOOTER ===== */
+footer {
   text-align: center;
-}
-
-.contact-link {
-  display: inline-block;
-  margin: 8px 0 22px;
-  color: #0a9396;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.2s;
-}
-
-.contact-link:hover {
-  color: #000;
-  transform: scale(1.05);
-  text-decoration: underline;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 30px;
 }
 
 /* ===== RESULTS GRID ===== */
@@ -159,7 +151,7 @@ section h2 {
   max-width: 220px;
   height: 220px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
@@ -169,23 +161,8 @@ section h2 {
   color: #0f3d3e;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  padding: 15px;
-  margin-top: auto;
-  font-size: 0.95rem;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 800px) {
-  .results-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
+/* ===== MOBILE ===== */
+@media (max-width: 700px) {
   nav a {
     display: block;
     margin: 10px 0;
@@ -194,14 +171,18 @@ footer {
   .join-section h2 {
     font-size: 2rem;
   }
-
   .logo {
     width: 65px;
     height: 65px;
   }
-
-  .results-grid {
-    grid-template-columns: 1fr;
+.results-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 500px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
