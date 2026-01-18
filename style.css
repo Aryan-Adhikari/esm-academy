@@ -46,7 +46,7 @@ header {
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #f4d03f;
+  border: 3px solid black;
 }
 
 /* HEADER TEXT */
@@ -93,7 +93,7 @@ nav a.active {
 }
 
 #typing-text {
-  color: #f4d03f;
+  color: red;
   font-weight: 700;
   border-right: 3px solid #f4d03f;
   padding-right: 6px;
@@ -102,7 +102,7 @@ nav a.active {
 
 @keyframes blink {
   0%, 50%, 100% { border-color: transparent; }
-  25%, 75% { border-color: #f4d03f; }
+  25%, 75% { border-color: red; }
 }
 
 /* ===== MAIN SECTION ===== */
@@ -204,3 +204,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
