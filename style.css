@@ -11,7 +11,8 @@ body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   color: #fff;
-
+  display: flex;             
+  flex-direction: column;   
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("images/background.jpg");
@@ -205,6 +206,7 @@ footer {
   }
 
 }
+
 
 
 
