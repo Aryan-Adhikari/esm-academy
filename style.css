@@ -216,6 +216,7 @@ footer {
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 12px;
+   text-shadow: 0 0 6px rgba(255,255,255,0.4);
 }
 
 .social-icons {
@@ -238,6 +239,7 @@ footer {
   transform: scale(1.15);
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
+
 
 
 
